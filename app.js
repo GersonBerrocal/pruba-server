@@ -5,7 +5,7 @@ const express = require('express'),
   router = require('./router');
 
 app
-  .set('port', 3000)
+  .set('port', 80)
   .use(express.json())
   .use(express.urlencoded({ extended: false }))
   .use(upload.array())
